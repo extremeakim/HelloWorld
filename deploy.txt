@@ -10,12 +10,3 @@ aws cloudformation deploy
 
 
 
-
-
-AKIAV6QBTGULZOR26IGQ
-
-
-uDzhHeYAqPyMPzCDGEttvC72SlfvknyKRtpdrYng
-
-
-keyname EUPairKeyForAkim
