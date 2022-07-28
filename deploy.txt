@@ -1,7 +1,7 @@
 aws cloudformation deploy
  --template-file /root/Templates/WebServert.json
  --stack-name CliTest1
- --kms-key-id key-03fc2e10c8253a4fc
+ --kms-key-id ********
 
 
 
