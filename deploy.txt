@@ -1,12 +1,4 @@
 aws cloudformation deploy
  --template-file /root/Templates/WebServert.json
- --stack-name CliTest1
- --kms-key-id ********
-
-
-
-
-
-
-
-
+ --stack-name CliFifthTry
+ --parameter-overrides EUPairKeyForAkim=EUPairKeyForAkim
