@@ -1,0 +1,19 @@
+variables:
+  AWS_REGION: $AWS_DEFAULT_REGION
+  MODE: BUILD
+  STACK_NAME: 'CliStack'
+  GITLAB_RUL: 'https://gitlab.com/extremeakim' #GitLabURL
+  GITLAB_TOKEN: 'glpat-yeSUXPJYrpbSw83NqV4T' #GitLabRegistrationToken
+
+stages:
+  - deploy
+
+
+Deploy:
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  stage: deploy
+  script:
+    - aws configure set region ${AWS_REGION}
+    - aws cloudformation deploy --template-file CFStackTemplate/webserver.json --stack-name $STACK_NAME --parameter-overrides EUPairKeyForAkim=EUPairKeyForAkim
