@@ -3,7 +3,7 @@ variables:
   MODE: BUILD
   STACK_NAME: 'CliStack'
   GITLAB_RUL: 'https://gitlab.com/extremeakim' #GitLabURL
-  GITLAB_TOKEN: 'glpat-yeSUXPJYrpbSw83NqV4T' #GitLabRegistrationToken
+  GITLAB_TOKEN: 'TOKEN HERE' #GitLabRegistrationToken
 
 stages:
   - deploy
